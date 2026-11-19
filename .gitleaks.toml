@@ -1,0 +1,5 @@
+# La clave publicable de Supabase (sb_publishable_...) va dentro del bundle web por dise?o: es p?blica y est? protegida por RLS.
+# Nunca va aqu? una clave secret/service_role (se comprob? que el bundle no la contiene).
+[allowlist]
+description = "bundle web publicado"
+paths = ['''site/_expo/static/js/web/.*\.js''']
