@@ -126,3 +126,6 @@ Una persona que usa el transporte público y a veces pierde señal: marca "Beber
 ## Rutas de la PC del autor
 Algunos scripts de apoyo (compilación, base de datos, capturas) contienen rutas absolutas del equipo del autor (D:\ClaudeBrain\...). No son secretos, pero esos scripts no funcionarán en otra máquina sin cambiar las rutas. El código del proyecto y su sitio publicado no dependen de ellas.
 
+
+> Nota de despliegue: Vercel ignora las carpetas llamadas `node_modules`. Por eso la fuente de iconos de la PWA se movió a `site/assets/vendor-modules/` y el bundle apunta a esa ruta. Si recompilas con `expo export`, repite ese paso o la app queda en blanco.
+
